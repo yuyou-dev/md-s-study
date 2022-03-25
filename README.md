@@ -9,16 +9,17 @@
 ### 1、项目关键代码文件
 #### 1）index.html
 设计实现项目加载页内容和适配原则以及引入原生css文件以及部分需要提前引入的js资源库。
-
+```html
     <link type="text/css" rel="stylesheet" href="css/style.css">
     <div id="loading">
       //加载页面的设计与实现
     </div>
     <script src="libs/Stage.js"></script>
     <script src="libs/jquery-2.1.3.min.js"></script>
+```
 #### 2）BaseScene.js
 长图最关键的适配原则就放置于这个文件夹中
-
+```javascript
     resize: function () {
         var w1 = window.innerWidth;
         var h1 = window.innerHeight;
@@ -36,7 +37,8 @@
         }
         this.scale = s;
         return;
-    },
+    }
+```
 #### 3）game.js
 在这个文件里则主要放置项目所需的接口函数以及一些功能函数
     
